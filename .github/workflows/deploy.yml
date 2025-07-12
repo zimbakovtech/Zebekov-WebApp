@@ -23,7 +23,7 @@ jobs:
 
       - name: Deploy on server
         run: |
-          ssh -i ~/.ssh/id_ed25519 root@your-domain.com << 'EOF'
+          ssh -i ~/.ssh/id_ed25519 root@172.104.146.103 << 'EOF'
             cd /var/www/zebekov
             git pull origin main
             npm install
