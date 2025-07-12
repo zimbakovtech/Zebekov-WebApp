@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "dental care, dentist, Strumica, Novo Selo, Macedonia, cosmetic dentistry, orthodontics, oral surgery",
   icons: {
-    icon: "https://www.zebekov.mk/assets/official_logo.svg",
+    icon: "../images/zebekov_logo.png",
   },
 };
 

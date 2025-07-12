@@ -71,9 +71,9 @@ export default function Footer() {
                 className="flex items-center space-x-3 mb-6"
               >
                 <img
-                  src="https://www.zebekov.mk/assets/official_logo.svg"
+                  src="../images/zebekov_logo.png"
                   alt="Dental Center Zebekov"
-                  className="h-10 w-auto filter brightness-0 invert"
+                  className="h-10 w-auto"
                 />
                 <div>
                   <h3 className="text-lg font-bold">
@@ -181,7 +181,12 @@ export default function Footer() {
               {t("footer.allRightsReserved")}
             </p>
             <p className="text-gray-400 text-xs">
-              {t("footer.createdBy")} <a href="https://www.linkedin.com/in/damjan-zimbakov-775077213/" target="_blank" className="text-[#44B0B6] hover:text-[#3A9BA1] transition-colors">
+              {t("footer.createdBy")}{" "}
+              <a
+                href="https://www.linkedin.com/in/damjan-zimbakov-775077213/"
+                target="_blank"
+                className="text-[#44B0B6] hover:text-[#3A9BA1] transition-colors"
+              >
                 {t("footer.damjanZimbakov")}
               </a>
             </p>

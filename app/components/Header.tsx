@@ -50,9 +50,12 @@ export default function Header() {
       <nav className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href={`/${locale}`} className="flex items-center space-x-3 p-2 flex-shrink-0">
+          <Link
+            href={`/${locale}`}
+            className="flex items-center space-x-3 p-2 flex-shrink-0"
+          >
             <img
-              src="https://www.zebekov.mk/assets/official_logo.svg"
+              src="images/zebekov_logo.png"
               alt="Dental Center Zebekov"
               className="h-10 w-auto sm:h-12"
             />
@@ -108,7 +111,10 @@ export default function Header() {
               <PhoneIcon className="h-5 w-5" />
               <span className="font-medium">{t("header.phone")}</span>
             </a>
-            <Link href={`/${locale}/contact`} className="btn-primary whitespace-nowrap">
+            <Link
+              href={`/${locale}/contact`}
+              className="btn-primary whitespace-nowrap"
+            >
               {t("header.bookAppointment")}
             </Link>
           </div>
