@@ -225,9 +225,9 @@ export default function TeamSection() {
                                 `team.${member.translationKey}.specialization`
                               )}
                             </p>
-                            <p className="text-xs text-gray-700 leading-snug">
+                            {/* <p className="text-xs text-gray-700 leading-snug">
                               {t(`team.${member.translationKey}.description`)}
-                            </p>
+                            </p> */}
                           </div>
                         </div>
                       ))}
