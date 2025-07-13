@@ -24,10 +24,20 @@ export default function LanguageSwitcher() {
 
   const handleLanguageChange = (newLocale: string) => {
     startTransition(() => {
-      // Remove the current locale from the pathname
-      const pathWithoutLocale = pathname.replace(`/${locale}`, "") || "/";
-      // Navigate to the new locale
-      router.replace(`/${newLocale}${pathWithoutLocale}`);
+      // Get the current path without any locale prefix
+      let pathWithoutLocale = pathname.replace(/^\/(mk|en|bg)(?=\/|$)/, "");
+      if (pathWithoutLocale === "") pathWithoutLocale = "/";
+
+      // Always add the locale prefix
+      let targetPath;
+      if (pathWithoutLocale === "/") {
+        targetPath = `/${newLocale}`;
+      } else {
+        targetPath = `/${newLocale}${pathWithoutLocale}`;
+      }
+      
+      // Always use router.push to ensure navigation happens
+      router.push(targetPath);
     });
     setIsOpen(false);
   };

@@ -20,7 +20,9 @@ export default function Footer() {
       t("footer.services.cosmeticDentistry"),
       t("footer.services.orthodontics"),
       t("footer.services.oralSurgery"),
+      t("footer.services.implantology"),
       t("footer.services.preventiveCare"),
+      t("footer.services.emergencyCare"),
     ],
     quickLinks: [
       { name: t("navigation.about"), href: `/${locale}/about` },
@@ -71,7 +73,7 @@ export default function Footer() {
                 className="flex items-center space-x-3 mb-6"
               >
                 <img
-                  src="../images/zebekov_logo.png"
+                  src="/images/zebekov_logo.png"
                   alt="Dental Center Zebekov"
                   className="h-10 w-auto"
                 />

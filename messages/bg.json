@@ -156,8 +156,9 @@
       "cosmeticDentistry": "Естетична стоматология",
       "orthodontics": "Ортодонтия",
       "oralSurgery": "Орална хирургия",
-      "preventiveCare": "Профилактична грижа",
-      "emergencyCare": "Спешна грижа"
+      "implantology": "Имплантология",
+      "preventiveCare": "Протетична стоматология",
+      "emergencyCare": "Рентгенова диагностика"
     }
   },
   "header": {
@@ -388,7 +389,7 @@
       "name": "Струмица",
       "address": "Киро Абрашев 32, 2400 Струмица",
       "phone": "+389 70 515 734",
-      "email": "contact@zebekov.mk",
+      "email": "strumica@zebekov.mk",
       "hours": {
         "weekdays": "Понеделник - Петък: 8:00 - 20:00",
         "saturday": "Събота: 9:00 - 17:00",
@@ -404,9 +405,9 @@
     },
     "novoselo": {
       "name": "Маршал Тито 42, 2434 Ново Село",
-      "address": " Ново Село",
+      "address": "Ново Село",
       "phone": "+389 71 393 199",
-      "email": "contact@zebekov.mk",
+      "email": "novoselo@zebekov.mk",
       "hours": {
         "weekdays": "Понеделник - Петък: 8:00 - 20:00",
         "saturday": "Събота: 9:00 - 17:00",
@@ -452,8 +453,9 @@
       "generalDentistry": "Обща стоматология",
       "cosmeticDentistry": "Естетична стоматология",
       "orthodontics": "Ортодонтия",
-      "oralSurgery": "Орална хирургия",
-      "pediatricDentistry": "Детска стоматология",
+      "implantology": "Имплантология",
+      "prostheticDentistry": "Протетична стоматология",
+      "xrayDiagnostics": "Рентгенова диагностика",
       "emergencyCare": "Спешна грижа",
       "message": "Съобщение",
       "messagePlaceholder": "Разкажете ни за стоматологичните си нужди или въпроси...",

@@ -14,11 +14,11 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
   const isHomePage =
-    pathname === "/" || pathname === "/mk" || pathname === "/en";
+    pathname === "/" || pathname === "/mk" || pathname === "/en" || pathname === "/bg";
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Remove locale prefix from pathname for comparison
-  const cleanPathname = pathname.replace(/^\/(mk|en)/, "") || "/";
+  const cleanPathname = pathname.replace(/^\/(mk|en|bg)/, "") || "/";
 
   const navigation = [
     { name: t("navigation.home"), href: `/${locale}` },
@@ -55,7 +55,7 @@ export default function Header() {
             className="flex items-center space-x-3 p-2 flex-shrink-0"
           >
             <img
-              src="images/zebekov_logo.png"
+              src="/images/zebekov_logo.png"
               alt="Dental Center Zebekov"
               className="h-10 w-auto sm:h-12"
             />

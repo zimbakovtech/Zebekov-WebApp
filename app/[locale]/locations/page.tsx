@@ -27,7 +27,7 @@ export default function LocationsPage() {
         sunday: t("locations.strumica.hours.sunday"),
       },
       parking: t("locations.strumica.parking"),
-      image: "../images/strumica.jpg",
+      image: "/images/strumica.jpg",
       mapsLink: "https://maps.app.goo.gl/gVUN8gUcS8cbR5pM7",
       mapEmbed:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.3690894644756!2d22.643213175851976!3d41.43121239327597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a9fe731aa9aea7%3A0x3e7ed6ab7cadb484!2sDental%20Center%20Zebekov!5e0!3m2!1sen!2smk!4v1750509978910!5m2!1sen!2smk",
@@ -44,7 +44,7 @@ export default function LocationsPage() {
         sunday: t("locations.novoselo.hours.sunday"),
       },
       parking: t("locations.novoselo.parking"),
-      image: "../images/strumica.jpg",
+      image: "/images/strumica.jpg",
       mapsLink: "https://maps.app.goo.gl/jZzECamnvrc3gG7Y8",
       mapEmbed:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.2199248229736!2d22.879523275851067!3d41.412744394422326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a9f142cbd0aa1f%3A0x65a2bd9cf67eccf1!2sDental%20Center%20Zebekov!5e0!3m2!1sen!2smk!4v1750510021430!5m2!1sen!2smk",
@@ -78,7 +78,7 @@ export default function LocationsPage() {
       <section className="relative py-20 bg-gradient-to-br from-[#44B0B6] to-[#3A9BA1] text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="../images/background.jpg "
+            src="/images/background.jpg"
             alt="Our locations"
             className="w-full h-full object-cover opacity-20"
           />

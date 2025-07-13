@@ -156,8 +156,9 @@
       "cosmeticDentistry": "Cosmetic Dentistry",
       "orthodontics": "Orthodontics",
       "oralSurgery": "Oral Surgery",
-      "preventiveCare": "Preventive Care",
-      "emergencyCare": "Emergency Care"
+      "implantology": "Implantology",
+      "preventiveCare": "Prosthetic Dentistry",
+      "emergencyCare": "X-Ray Diagnostics"
     }
   },
   "header": {
@@ -333,10 +334,7 @@
         "description": "Advanced imaging for accurate diagnosis and treatment planning.",
         "duration": "15-30 min",
         "price": "From €20",
-        "features": [
-          "Digital X-rays",
-          "Panoramic imaging"
-        ]
+        "features": ["Digital X-rays", "Panoramic imaging"]
       }
     },
     "whyChoose": "Why Choose",
@@ -385,10 +383,10 @@
     "visitDescription": "Come to one of our locations for exceptional dental care",
     "callUsNow": "Call Us Now",
     "strumica": {
-      "name": "Strumica Location",
+      "name": "Strumica",
       "address": "Kiro Abrashev 32, 2400 Strumica",
       "phone": "+389 70 515 734",
-      "email": "contact@zebekov.mk",
+      "email": "strumica@zebekov.mk",
       "hours": {
         "weekdays": "Monday - Friday: 8:00 - 20:00",
         "saturday": "Saturday: 9:00 - 17:00",
@@ -397,10 +395,10 @@
       "parking": "Free parking available on site"
     },
     "novoselo": {
-      "name": "Novo Selo Location",
+      "name": "Novo Selo",
       "address": "Marshal Tito 47, 2437 Novo Selo",
       "phone": "+389 71 393 199",
-      "email": "contact@zebekov.mk",
+      "email": "novoselo@zebekov.mk",
       "hours": {
         "weekdays": "Monday - Friday: 8:00 - 20:00",
         "saturday": "Saturday: 9:00 - 17:00",
@@ -413,6 +411,8 @@
     "title": "Contact",
     "titleHighlight": "Us",
     "subtitle": "Get in touch with us to schedule your appointment or ask any questions about our services.",
+    "thankYou": "Thank You for Contacting Us",
+    "thankYouMessage": "We will get back to you within 24 hours.",
     "bookYourAppointment": "Book Your",
     "bookYourAppointmentHighlight": "Appointment",
     "formDescription": "Fill out the form below and we'll get back to you within 24 hours to schedule your appointment.",
@@ -464,8 +464,9 @@
       "cosmeticDentistry": "Cosmetic Dentistry",
       "orthodontics": "Orthodontics",
       "oralSurgery": "Oral Surgery",
-      "pediatricDentistry": "Pediatric Dentistry",
-      "emergencyCare": "Emergency Care",
+      "implantology": "Implantology",
+      "prostheticDentistry": "Prosthetic Dentistry",
+      "xrayDiagnostics": "X-Ray Diagnostics",
       "messagePlaceholder": "Enter your message",
       "sendMessage": "Send Message",
       "sending": "Sending..."

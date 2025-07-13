@@ -90,7 +90,7 @@ export default function AboutPage() {
       <section className="relative py-20 bg-gradient-to-br from-[#44B0B6] to-[#3A9BA1] text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="../images/background.jpg"
+            src="/images/background.jpg"
             alt="About us"
             className="w-full h-full object-cover opacity-20"
           />
@@ -147,7 +147,7 @@ export default function AboutPage() {
             >
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src="../images/aboutus.jpg"
+                  src="/images/aboutus.jpg"
                   alt="Dental Center Zebekov Team"
                   className="w-full h-full object-cover object-center"
                 />
