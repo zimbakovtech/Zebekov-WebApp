@@ -36,7 +36,7 @@ export default function ServicesPage() {
         t("services.servicesList.dentalMedicine.features.4"),
         t("services.servicesList.dentalMedicine.features.5"),
       ],
-      image: "../images/services/stomatoloska_medicina.jpg",
+      image: "/images/services/stomatoloska_medicina.jpg",
     },
     {
       id: 2,
@@ -51,7 +51,7 @@ export default function ServicesPage() {
         t("services.servicesList.aestheticDentistry.features.2"),
         t("services.servicesList.aestheticDentistry.features.3"),
       ],
-      image: "../images/services/estetska_stomatologija.jpg",
+      image: "/images/services/estetska_stomatologija.jpg",
     },
     {
       id: 3,
@@ -69,7 +69,7 @@ export default function ServicesPage() {
         t("services.servicesList.orthodontics.features.5"),
         t("services.servicesList.orthodontics.features.6"),
       ],
-      image: "../images/services/ortodoncija.jpg",
+      image: "/images/services/ortodoncija.jpg",
     },
     {
       id: 4,
@@ -84,7 +84,7 @@ export default function ServicesPage() {
         t("services.servicesList.oralSurgery.features.2"),
         t("services.servicesList.oralSurgery.features.3"),
       ],
-      image: "../images/services/oralna_hirurgija.jpg",
+      image: "/images/services/oralna_hirurgija.jpg",
     },
     {
       id: 5,
@@ -100,7 +100,7 @@ export default function ServicesPage() {
         t("services.servicesList.implantology.features.3"),
         t("services.servicesList.implantology.features.4"),
       ],
-      image: "../images/services/implantologija.jpg",
+      image: "/images/services/implantologija.jpg",
     },
     {
       id: 6,
@@ -117,7 +117,7 @@ export default function ServicesPage() {
         t("services.servicesList.prostheticDentistry.features.4"),
         t("services.servicesList.prostheticDentistry.features.5"),
       ],
-      image: "../images/services/protetika.jpg",
+      image: "/images/services/protetika.jpg",
     },
     {
       id: 7,
@@ -130,7 +130,7 @@ export default function ServicesPage() {
         t("services.servicesList.xrayDiagnostics.features.0"),
         t("services.servicesList.xrayDiagnostics.features.1"),
       ],
-      image: "../images/services/rtg.jpg",
+      image: "/images/services/rtg.jpg",
     },
   ];
 
@@ -161,7 +161,7 @@ export default function ServicesPage() {
       <section className="relative py-20 bg-gradient-to-br from-[#44B0B6] to-[#3A9BA1] text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="../images/background.jpg"
+            src="/images/background.jpg"
             alt="Dental services"
             className="w-full h-full object-cover opacity-20"
           />
@@ -219,9 +219,6 @@ export default function ServicesPage() {
                   <div className="absolute bottom-4 right-4 flex space-x-2">
                     <span className="bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-full text-sm font-medium">
                       {service.duration}
-                    </span>
-                    <span className="bg-[#44B0B6] text-white px-3 py-1 rounded-full text-sm font-medium">
-                      {service.price}
                     </span>
                   </div>
                 </div>
@@ -344,7 +341,8 @@ export default function ServicesPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              {t("services.readyToTransform")}
+              {t("services.readyToTransform")}{" "}
+              {t("services.readyToTransformHighlight")}
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
               {t("services.readyDescription")}

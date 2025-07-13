@@ -14,7 +14,7 @@ export default function Hero() {
       {/* Background with gradient overlay */}
       <div className="absolute inset-0">
         <img
-          src="images/background.jpg"
+          src="/images/background.jpg"
           alt="Modern dental office"
           className="w-full h-full object-cover"
         />

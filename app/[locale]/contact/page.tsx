@@ -101,42 +101,34 @@ export default function ContactPage() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // try {
-    //   const response = await fetch("/api/send-email", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify({
-    //       name: formData.name,
-    //       email: formData.email,
-    //       phone: formData.phone,
-    //       service: formData.service,
-    //       location: formData.location,
-    //       message: formData.message,
-    //     }),
-    //   });
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    //   if (response.ok) {
-    //     setIsSubmitted(true);
-    //     setFormData({
-    //       name: "",
-    //       email: "",
-    //       phone: "",
-    //       service: "",
-    //       location: "",
-    //       message: "",
-    //     });
-    //     setTimeout(() => setIsSubmitted(false), 3000);
-    //   } else {
-    //     // Optionally handle error
-    //     alert("Failed to send email. Please try again.");
-    //   }
-    // } catch (error) {
-    //   alert("An error occurred. Please try again.");
-    // } finally {
-    //   setIsSubmitting(false);
-    // }
+      if (response.ok) {
+        setIsSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          service: "",
+          location: "",
+          message: "",
+        });
+        setTimeout(() => setIsSubmitted(false), 3000);
+      } else {
+        console.error("Email send failed", await response.text());
+        alert(t("contact.form.sendError"));
+      }
+    } catch (error) {
+      console.error(error);
+      alert(t("contact.form.sendError"));
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -145,7 +137,7 @@ export default function ContactPage() {
       <section className="relative py-20 bg-gradient-to-br from-[#44B0B6] to-[#3A9BA1] text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="../images/background.jpg"
+            src="/images/background.jpg"
             alt={t("contact.title")}
             className="w-full h-full object-cover opacity-20"
           />
@@ -280,10 +272,10 @@ export default function ContactPage() {
                         <option value="">
                           {t("contact.form.selectLocation")}
                         </option>
-                        <option value="strumica">
+                        <option value="Strumica">
                           {t("contact.form.strumicaCenter")}
                         </option>
-                        <option value="novoselo">
+                        <option value="Novo Selo">
                           {t("contact.form.novoseloBranch")}
                         </option>
                       </select>
@@ -307,23 +299,26 @@ export default function ContactPage() {
                       <option value="">
                         {t("contact.form.selectService")}
                       </option>
-                      <option value="general">
+                      <option value="Opsta Stomatologija">
                         {t("contact.form.generalDentistry")}
                       </option>
-                      <option value="cosmetic">
+                      <option value="Estetska Stomatologija">
                         {t("contact.form.cosmeticDentistry")}
                       </option>
-                      <option value="orthodontics">
+                      <option value="Ortodoncija">
                         {t("contact.form.orthodontics")}
                       </option>
-                      <option value="surgery">
+                      <option value="Oralna Hirurgija">
                         {t("contact.form.oralSurgery")}
                       </option>
                       <option value="pediatric">
-                        {t("contact.form.pediatricDentistry")}
+                        {t("contact.form.implantology")}
+                      </option>
+                      <option value="pediatric">
+                        {t("contact.form.prostheticDentistry")}
                       </option>
                       <option value="emergency">
-                        {t("contact.form.emergencyCare")}
+                        {t("contact.form.xrayDiagnostics")}
                       </option>
                     </select>
                   </div>

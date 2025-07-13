@@ -14,92 +14,92 @@ export default function TeamSection() {
   const teamMembers = [
     {
       id: 1,
-      image: "../images/doctors/toskoZebekov.jpg",
+      image: "/images/doctors/toskoZebekov.jpg",
       translationKey: "toskoZebekov",
     },
     {
       id: 2,
-      image: "../images/doctors/gonceVasileva.jpg",
+      image: "/images/doctors/gonceVasileva.jpg",
       translationKey: "gonceVasilevaKoleva",
     },
     {
       id: 3,
-      image: "../images/doctors/kirePopcev.jpg",
+      image: "/images/doctors/kirePopcev.jpg",
       translationKey: "kirePopcev",
     },
     {
       id: 4,
-      image: "../images/doctors/blagicaTrencev.jpg",
+      image: "/images/doctors/blagicaTrencev.jpg",
       translationKey: "blagicaTrencev",
     },
     {
       id: 5,
-      image: "../images/doctors/emilijaStojceva.jpg",
+      image: "/images/doctors/emilijaStojceva.jpg",
       translationKey: "emilijaStojceva",
     },
     {
       id: 6,
-      image: "../images/doctors/ljupcoBikovski.jpg",
+      image: "/images/doctors/ljupcoBikovski.jpg",
       translationKey: "ljupcoBikovski",
     },
     {
       id: 7,
-      image: "../images/doctors/adrijanaKotev.jpg",
+      image: "/images/doctors/adrijanaKotev.jpg",
       translationKey: "adrijanaKotev",
     },
     {
       id: 8,
-      image: "../images/doctors/anaKacarska.jpg",
+      image: "/images/doctors/anaKacarska.jpg",
       translationKey: "anaKacarska",
     },
     {
       id: 9,
-      image: "../images/doctors/lenceZimbakova.jpg",
+      image: "/images/doctors/lenceZimbakova.jpg",
       translationKey: "lenceZimbakova",
     },
     {
       id: 10,
-      image: "../images/doctors/vericaCukarska.jpg",
+      image: "/images/doctors/vericaCukarska.jpg",
       translationKey: "vericaCukarska",
     },
     {
       id: 11,
-      image: "../images/doctors/froskaIvanova.jpg",
+      image: "/images/doctors/froskaIvanova.jpg",
       translationKey: "froskaIvanova",
     },
     {
       id: 12,
-      image: "../images/doctors/ivanaStojkova.jpg",
+      image: "/images/doctors/ivanaStojkova.jpg",
       translationKey: "ivanaStojkova",
     },
     {
       id: 13,
-      image: "../images/doctors/bojanaBozinova.jpg",
+      image: "/images/doctors/bojanaBozinova.jpg",
       translationKey: "bojanaBozinova",
     },
     {
       id: 14,
-      image: "../images/doctors/vericaIlieva.jpg",
+      image: "/images/doctors/vericaIlieva.jpg",
       translationKey: "vericaIlieva",
     },
     {
       id: 15,
-      image: "../images/doctors/anetaTodorova.jpg",
+      image: "/images/doctors/anetaTodorova.jpg",
       translationKey: "anetaTodorova",
     },
     {
       id: 16,
-      image: "../images/doctors/gordanaStoev.jpg",
+      image: "/images/doctors/gordanaStoev.jpg",
       translationKey: "gordanaStoev",
     },
     {
       id: 17,
-      image: "../images/doctors/emilijaTrbogazova.jpg",
+      image: "/images/doctors/emilijaTrbogazova.jpg",
       translationKey: "emilijaTrbogazova",
     },
     {
       id: 18,
-      image: "../images/doctors/emilijaCvetkova.jpg",
+      image: "/images/doctors/emilijaCvetkova.jpg",
       translationKey: "emilijaCvetkova",
     },
   ];
@@ -184,7 +184,7 @@ export default function TeamSection() {
           <div className="overflow-hidden rounded-2xl">
             {/* Sliding Container */}
             <motion.div
-              className="flex transition-transform duration-500 ease-in-out"
+              className="flex transition-transform duration-1300 ease-in-out"
               {...({} as any)}
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
