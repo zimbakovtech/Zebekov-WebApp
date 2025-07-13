@@ -6,8 +6,8 @@ export async function POST(request: Request) {
     await request.json();
 
   const mailjet = new Mailjet({
-    apiKey: process.env.MJ_API_KEY || "",
-    apiSecret: process.env.MJ_API_SECRET || "",
+    apiKey: "e9a17e9fe29b424e32d8d543d85ffa40",
+    apiSecret: "2e2e06b61aac436a27368fcbf38650ee",
   });
 
   try {
