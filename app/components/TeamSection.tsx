@@ -281,9 +281,9 @@ export default function TeamSection() {
           {...({} as any)}
         >
           {[
-            { number: "11", label: t("team.expertDentists") },
-            { number: "78", label: t("team.appointmentsDaily") },
-            { number: "6", label: t("team.specializations") },
+            { number: "9", label: t("team.expertDentists") },
+            { number: "134", label: t("team.appointmentsDaily") },
+            { number: "3", label: t("team.specializations") },
             { number: "100%", label: t("team.patientSatisfaction") },
           ].map((stat, index) => (
             <div key={index} className="text-center">

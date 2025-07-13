@@ -109,7 +109,7 @@ export default function Hero() {
           >
             {[
               { number: "25+", label: t("hero.yearsExperience") },
-              { number: "5000+", label: t("hero.happyPatients") },
+              { number: "10.000+", label: t("hero.happyPatients") },
               { number: "2", label: t("hero.locations") },
             ].map((stat, index) => (
               <div key={index} className="text-center">
