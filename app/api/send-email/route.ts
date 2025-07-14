@@ -19,9 +19,9 @@ export async function POST(request: Request) {
             Name: "Dental Center Zebekov",
           },
           To: [{ Email: "contact@zebekov.mk", Name: "Contact" }],
-          Subject: "New Appointment Request from Website",
+          Subject: "Барање за закажување на термин од www.zebekov.mk",
           TextPart: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nLocation: ${location}\nService: ${service}\nMessage: ${message}`,
-          HTMLPart: `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Phone:</strong> ${phone}</p><p><strong>Location:</strong> ${location}</p><p><strong>Service:</strong> ${service}</p><p><strong>Message:</strong><br/>${message}</p>`,
+          HTMLPart: `<p><strong>Име и презиме:</strong> ${name}</p><p><strong>Е-маил:</strong> ${email}</p><p><strong>Телефонски број:</strong> ${phone}</p><p><strong>Локација:</strong> ${location}</p><p><strong>Услуга:</strong> ${service}</p><p><strong>Порака:</strong><br/>${message}</p>`,
         },
       ],
     });
